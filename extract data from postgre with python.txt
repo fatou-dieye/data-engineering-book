@@ -1,0 +1,9 @@
+import psycopg2 as db
+import pandas as pd
+
+conn = db.connect (database='dataengineeringBook', host='localhost', user='amdyfall',
+password='Amdyfall-97')
+
+df=pd.read_sql("select * from users", conn)
+
+df.to_json(orient='records') # Affiche les données au format json
