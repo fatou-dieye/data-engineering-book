@@ -1,0 +1,9 @@
+ref: https://www.youtube.com/watch?v=SYOUbiGtGiU
+
+-Open Ubuntu desktop
+-initialize db with "airflow initdb"
+-lunch webserver with " airflow webserver -p 8081"
+-run scheduler winth a new ubuntu desktop like this command " airflow scheduler"
+
+pour acceder au ficher de configuration : (cd root) puis (cd airflow) puis la commande ls pour voir les repertoires et on visualise les fichers par : "vi airflow.cfg" ou "sudo nano airflow:cfg"
+ 
